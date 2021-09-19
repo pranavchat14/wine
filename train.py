@@ -15,12 +15,7 @@ seed = 42
 ################################
 
 # Load in the data
-with dvc.api.open(
-        'wine_quality.csv',
-         repo='https://github.com/pranavchat14/wine.git'
-        ) as fd:
-    df = pd.read_csv(fd)
-# df = pd.read_csv("wine_quality.csv")
+df = pd.read_csv("wine_quality.csv")
 
 # Split into train and test sections
 y = df.pop("quality")

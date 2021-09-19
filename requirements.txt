@@ -3,4 +3,3 @@ sklearn
 matplotlib
 seaborn
 numpy
-dvc[gdrive]

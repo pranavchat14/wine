@@ -16,7 +16,7 @@ jobs:
           pip install -r requirements.txt
 
           # Pull data & run-cache from gdrive and reproduce pipeline
-          dvc pull data --run-cache
+          dvc pull wine_quality.csv
           dvc repro
 
           echo "## Model metrics" > report.md

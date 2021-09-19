@@ -3,5 +3,3 @@ stages:
     cmd: python train.py
     deps:
     - train.py
-    outs:
-    - metrics.json
